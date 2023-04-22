@@ -7,7 +7,7 @@ pygame.mixer.pre_init(44100, -16, 2, 512)
 #PYGAME INIT
 pygame.init()
 #SET RESOLUTION - FULLSCREEN - HARDWARE MEMORY - BUFFERING - COLORS
-screen = pygame.display.set_mode(SCREEN_SIZE, FULLSCREEN | HWSURFACE | DOUBLEBUF, 32)
+screen = pygame.display.set_mode(SCREEN_SIZE, HWSURFACE | DOUBLEBUF, 32)
 #MOUSE INVISIBLE
 pygame.mouse.set_visible(0)
 #WINDOW TITLE

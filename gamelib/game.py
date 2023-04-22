@@ -66,7 +66,7 @@ class Game:
                         self.left = True
                     if event.key == K_RIGHT:
                         self.right = True
-                    if event.key == K_RCTRL:
+                    if event.key == K_RCTRL or event.key == K_LCTRL:
                         self.attack = True
                     if event.key == K_TAB:
                         self.up = self.down = self.left = self.right = self.attack = self.jump = False
@@ -84,7 +84,7 @@ class Game:
                         self.left = False
                     if event.key == K_RIGHT:
                         self.right = False
-                    if event.key == K_RCTRL:
+                    if event.key == K_RCTRL or event.key == K_LCTRL:
                         self.attack = False
 
                 if not self.no_controller:
